@@ -8,6 +8,8 @@ import java.util.HashMap;
 import android.os.AsyncTask;
 import android.util.Log;
 import android.widget.TextView;
+import at.fhv.uc.android.CanTestAndroidActivity;
+import at.fhv.uc.android.R;
 import at.fhv.uc.can.customconnection.CustomInputStream;
 import at.fhv.uc.can.customconnection.CustomOutputStream;
 import at.fhv.uc.can.standardframe.CANFrameSimulator;
@@ -35,7 +37,9 @@ public class DataClientAsyncTask extends AsyncTask<Void, Void, Void>{
 		m_tabletID = 6492;
 		m_sessionSensors = new HashMap<Integer, Integer>();
 		m_output = new StringBuffer();
+		//m_tv = new TextView(CanTestAndroidActivity.this);
 		m_tv = tv;
+		//canInfoTextView;
 	}
 	
 	/**
@@ -166,6 +170,7 @@ public class DataClientAsyncTask extends AsyncTask<Void, Void, Void>{
 	protected void onProgressUpdate(Void... values) {
 
 		super.onProgressUpdate(values);
+		
 		m_tv.append(m_output);
 	}
 	

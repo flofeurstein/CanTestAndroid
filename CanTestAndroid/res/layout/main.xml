@@ -10,11 +10,11 @@
         android:text="@string/hello" />
 
     <Button
-        android:id="@+id/startServicebutton"
+        android:id="@+id/startCANbutton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/startService"
-        android:onClick="startService" />
+        android:text="@string/startCAN"
+        android:onClick="startCAN" />
 
     <TextView
         android:id="@+id/canInfoTextView"

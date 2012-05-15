@@ -3,7 +3,7 @@
 
     <string name="hello">Hello World, CanTestAndroidActivity!</string>
     <string name="app_name">CanTestAndroid</string>
-    <string name="canInfo">Receiving CAN Info ...</string>
-    <string name="startService">Start Service</string>
+    <string name="canInfo">Receiving CAN Info</string>
+    <string name="startCAN">Start CAN Communication</string>
 
 </resources>

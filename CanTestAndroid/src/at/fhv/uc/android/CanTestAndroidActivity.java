@@ -19,8 +19,6 @@ public class CanTestAndroidActivity extends Activity {
     	TextView tv = (TextView) findViewById(R.id.canInfoTextView);
     	tv.append("\n");
     	
-    	//DataClient dcl = new DataClient(tv);
-    	//dcl.startConnection();
     	new DataClientAsyncTask(tv).execute((Void)null);
     }
     
